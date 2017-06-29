@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Reachability/Reachability.h"
+#import "Reachability.h"
 
 @interface NIHttpStatus : NSObject
 +(NetworkStatus)getNetWorkStatus;
