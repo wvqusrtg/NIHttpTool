@@ -12,11 +12,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/wvqusrtg/NIHttpTool.git", :tag => "0.0.1" }
   s.source_files  = "NIHttpTool", "*.{h,m}"
-  s.subspec 'Reachability' do |reac|
-    reac.ios.deployment_target = '7.0'
-    reac.source_files = 'Pods/Reachability/Reachability.{h,m}'
-    reac.public_header_files = 'Pods/Reachability/Reachability.h'
-  end
 
   s.requires_arc = true
 
