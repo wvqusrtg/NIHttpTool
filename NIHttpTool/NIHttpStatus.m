@@ -8,7 +8,7 @@
 
 #import "NIHttpStatus.h"
 #import <UIKit/UIKit.h>
-#import "Reachability.h"
+#import "Reachability/Reachability.h"
 
 @implementation NIHttpStatus
 #pragma mark - 获取当前网络状态
