@@ -19,6 +19,11 @@
 		8C7815C81F04935F00D49016 /* NIHttpStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7815C71F04935F00D49016 /* NIHttpStatus.m */; };
 		8C7815CB1F0493BA00D49016 /* NIFileDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7815CA1F0493BA00D49016 /* NIFileDataModel.m */; };
 		8C7815CE1F0493F700D49016 /* NIHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7815CD1F0493F700D49016 /* NIHttpTool.m */; };
+		8C7815D11F04A75B00D49016 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7815CF1F04A75B00D49016 /* AFNetworking.framework */; };
+		8C7815D21F04A75B00D49016 /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7815D01F04A75B00D49016 /* Reachability.framework */; };
+		8C7815D31F04A90100D49016 /* Reachability.framework in Sources */ = {isa = PBXBuildFile; fileRef = 8C7815D01F04A75B00D49016 /* Reachability.framework */; };
+		8C7815D41F04A90B00D49016 /* AFNetworking.framework in Sources */ = {isa = PBXBuildFile; fileRef = 8C7815CF1F04A75B00D49016 /* AFNetworking.framework */; };
+		8C7815D51F04A91100D49016 /* Pods_NIHttpToolDemo.framework in Sources */ = {isa = PBXBuildFile; fileRef = 01286B12B2AA4002B21D621A /* Pods_NIHttpToolDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +49,8 @@
 		8C7815CA1F0493BA00D49016 /* NIFileDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIFileDataModel.m; sourceTree = "<group>"; };
 		8C7815CC1F0493F700D49016 /* NIHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIHttpTool.h; sourceTree = "<group>"; };
 		8C7815CD1F0493F700D49016 /* NIHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIHttpTool.m; sourceTree = "<group>"; };
+		8C7815CF1F04A75B00D49016 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "Build/Products/Debug-iphoneos/AFNetworking/AFNetworking.framework"; sourceTree = "<group>"; };
+		8C7815D01F04A75B00D49016 /* Reachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reachability.framework; path = "Build/Products/Debug-iphoneos/Reachability/Reachability.framework"; sourceTree = "<group>"; };
 		D912B60914BC6D2F9CCD7F8B /* Pods-NIHttpToolDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIHttpToolDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NIHttpToolDemo/Pods-NIHttpToolDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C7815D11F04A75B00D49016 /* AFNetworking.framework in Frameworks */,
+				8C7815D21F04A75B00D49016 /* Reachability.framework in Frameworks */,
 				421F5487425C67D176DFB62D /* Pods_NIHttpToolDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +80,8 @@
 		7B1BC28B938B86EBB56C649D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8C7815CF1F04A75B00D49016 /* AFNetworking.framework */,
+				8C7815D01F04A75B00D49016 /* Reachability.framework */,
 				01286B12B2AA4002B21D621A /* Pods_NIHttpToolDemo.framework */,
 			);
 			name = Frameworks;
@@ -259,6 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C7815D51F04A91100D49016 /* Pods_NIHttpToolDemo.framework in Sources */,
+				8C7815D41F04A90B00D49016 /* AFNetworking.framework in Sources */,
+				8C7815D31F04A90100D49016 /* Reachability.framework in Sources */,
 				8C7815CB1F0493BA00D49016 /* NIFileDataModel.m in Sources */,
 				8C7815C51F0492AE00D49016 /* NSDictionary+Json.m in Sources */,
 				8C7815B01F04916D00D49016 /* ViewController.m in Sources */,
@@ -391,6 +405,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D66L8SMRE3;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphoneos/AFNetworking",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphoneos/Reachability",
+				);
 				INFOPLIST_FILE = NIHttpToolDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -407,6 +426,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D66L8SMRE3;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphoneos/AFNetworking",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphoneos/Reachability",
+				);
 				INFOPLIST_FILE = NIHttpToolDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
