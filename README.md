@@ -65,6 +65,8 @@ NIHttpTool 简单封装AFNetWorking网络请求
 
 >![](./Res/NIRequest.png)
 
->4、问题、建议或你有更好的勿忘给个issues
-    `QQ:1911398892`
-    `微信:wvqusrtg`
+>4、[NICopyDBToSandBox (0.0.2)NICopyDBToSandBox:拷贝DB文件到沙盒里及其他牵涉沙盒Documents文件夹内/产品（Ant.ipa包里面）文件夹内fileName操作.---传送门](https://github.com/wvqusrtg/NICopyDBToSandBox.git)
+
+>5、问题、建议或你有更好的勿忘给个issues   
+   ### `QQ:1911398892`
+   ### `微信:wvqusrtg`
