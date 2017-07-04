@@ -1,5 +1,12 @@
 # NIHttpTool
 NIHttpTool 简单封装AFNetWorking网络请求
+---
+
+![License MIT](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)
+![Pod version](https://img.shields.io/cocoapods/v/NIHttpTool.svg?style=flat)
+[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Platform info](https://img.shields.io/cocoapods/p/NIHttpTool.svg?style=flat)](http://cocoadocs.org/docsets/WMPlayer)
+[![Build Status](https://api.travis-ci.org/NIHttpTool/NIHttpTool.svg?branch=master)](https://travis-ci.org/NIHttpTool/NIHttpTool)
 
 ---
 >1、[地址:https://github.com/wvqusrtg/NIHttpTool](https://github.com/wvqusrtg/NIHttpTool.git)![](./Res/NIHttpTool.png)
