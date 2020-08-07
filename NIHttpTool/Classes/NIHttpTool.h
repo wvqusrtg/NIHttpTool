@@ -46,12 +46,12 @@ typedef NS_ENUM(NSInteger, HttpRequestType) {
     HttpRequestTypePost
 };
 
+//匿名block
 typedef void (^successBlock)(id obj);
-
 typedef void (^errorBlock)(HttpErrorType errorType);
 typedef void (^failureBlocks)(NSError *error);
-typedef void (^clearHttpCacheBlock)();
-typedef void (^clearHttpExpiredCacheBlock)();
+typedef void (^clearHttpCacheBlock)(void);
+typedef void (^clearHttpExpiredCacheBlock)(void);
 
 /**
  *  总的请求，包含cache
