@@ -1,81 +1,29 @@
 # NIHttpTool
-NIHttpTool 简单封装AFNetWorking网络请求
----
 
-![License MIT](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)
-![Pod version](https://img.shields.io/cocoapods/v/NIHttpTool.svg?style=flat)
-[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Platform info](https://img.shields.io/cocoapods/p/NIHttpTool.svg?style=flat)](http://cocoadocs.org/docsets/WMPlayer)
-[![Build Status](https://api.travis-ci.org/NIHttpTool/NIHttpTool.svg?branch=master)](https://travis-ci.org/NIHttpTool/NIHttpTool)
+[![CI Status](https://img.shields.io/travis/1911398892@qq.com/NIHttpTool.svg?style=flat)](https://travis-ci.org/1911398892@qq.com/NIHttpTool)
+[![Version](https://img.shields.io/cocoapods/v/NIHttpTool.svg?style=flat)](https://cocoapods.org/pods/NIHttpTool)
+[![License](https://img.shields.io/cocoapods/l/NIHttpTool.svg?style=flat)](https://cocoapods.org/pods/NIHttpTool)
+[![Platform](https://img.shields.io/cocoapods/p/NIHttpTool.svg?style=flat)](https://cocoapods.org/pods/NIHttpTool)
 
----
->1、[地址:https://github.com/wvqusrtg/NIHttpTool](https://github.com/wvqusrtg/NIHttpTool.git)![](./Res/NIHttpTool.png)
+## Example
 
->2、功能集合如下,不断更新中...
->/**
- *  ①总的请求，包含cache
- *
- *  @param cacheType   缓存的类型
- *  @param requestType  请求类型
- *  @param params 请求的参数
- *  @param success 请求成功后的回调
- *  @param failure 请求失败后的回调
- */
-+ (void)requestHttpWithCacheType:(HttpCacheType)cacheType requestType:(HttpRequestType)requestType expired:(HttpCacheExpiredTimeType)expiredType url:(NSString *)url params:(NSDictionary *)params success:(successBlock)success failure:(void (^)(NSError *))failure;
->/**
- *  ②发送一个POST请求
- *
- *  @param url     请求路径
- *  @param params  请求参数
- *  @param success 请求成功后的回调
- *  @param failure 请求失败后的回调
- */
-+ (void)postWithURL:(NSString *)url params:(NSDictionary *)params success:(void (^)(id json))success failure:(void (^)(NSError *error))failure;
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-/**
- *  ③发送一个POST请求(上传文件数据)
- *
- *  @param url     请求路径
- *  @param params  请求参数
- *  @paramformData  文件参数
- *  @param success 请求成功后的回调
- *  @param failure 请求失败后的回调
- */
-+ (void)postWithURL:(NSString *)url params:(NSDictionary *)params formDataArray:(NSArray *)formDataArray success:(void (^)(id json))success failure:(void (^)(NSError *error))failure;
+## Requirements
 
->/**
- *  ④发送一个GET请求
- *
- *  @param url     请求路径
- *  @param params  请求参数
- *  @param success 请求成功后的回调
- *  @param failure 请求失败后的回调
- */
-+ (void)getWithURL:(NSString *)url params:(NSDictionary *)params success:(void (^)(id json))success failure:(void (^)(NSError *error))failure;
+## Installation
 
->/**
- * ⑤清除所有本地http缓存
- */
-+ (void)clearAllLocalHttpCache:(clearHttpCacheBlock)block;
+NIHttpTool is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
 
->/**
- * ⑥清除所有http时间缓存
- */
-+ (void)clearAllLocalHttpTimeCache:(clearHttpExpiredCacheBlock)block;
+```ruby
+pod 'NIHttpTool'
+```
 
->/**
- * ⑦清除所有http时间缓存
- */
-+(NSString *)getCurrentDate;
+## Author
 
->3、[一个老版本的传送门](https://github.com/wvqusrtg/NIRequest.git)
+1911398892@qq.com, 1911398892@qq.com
 
->![](./Res/NIRequest.png)
+## License
 
->4、[NICopyDBToSandBox (0.0.2)NICopyDBToSandBox:拷贝DB文件到沙盒里及其他牵涉沙盒Documents文件夹内/产品（Ant.ipa包里面）文件夹内fileName操作.---传送门](https://github.com/wvqusrtg/NICopyDBToSandBox.git)
-
->5、问题、建议或你有更好的勿忘给个issues   
-   ### `QQ:1911398892`
-   ### `微信:wvqusrtg`
-   
-![](./Res/WechatIMG606.jpeg)
+NIHttpTool is available under the MIT license. See the LICENSE file for more info.

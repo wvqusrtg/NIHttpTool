@@ -1,0 +1,6 @@
+framework module Pods_NIHttpTool_Tests {
+  umbrella header "Pods-NIHttpTool_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

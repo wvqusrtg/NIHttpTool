@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - NIHttpTool (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - NIHttpTool (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  NIHttpTool:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  NIHttpTool: 195bdc33b8c3723bfb4601474c56fd17c65fa823
+
+PODFILE CHECKSUM: 1f41856dd46b4c13f829acf9fe879a5ba13eaf41
+
+COCOAPODS: 1.9.2
