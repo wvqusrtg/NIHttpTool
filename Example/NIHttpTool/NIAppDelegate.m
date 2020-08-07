@@ -7,12 +7,15 @@
 //
 
 #import "NIAppDelegate.h"
+#import "NIHttpTool.h"
 
 @implementation NIAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    //网络监控初始化-一般放到AppDelegate里初始化
+    [NIHttpTool initialize];
     return YES;
 }
 

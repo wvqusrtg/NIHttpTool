@@ -62,7 +62,7 @@
 		65ED850F10908D1DCD19BD2D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A1235028599AB9F98BC6DC17 /* NIHttpTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NIHttpTool.podspec; path = ../NIHttpTool.podspec; sourceTree = "<group>"; };
+		A1235028599AB9F98BC6DC17 /* NIHttpTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NIHttpTool.podspec; path = ../NIHttpTool.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A9AD95F329530B4ADA008D66 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		AE1CFEBAD36D5111C2834016 /* Pods-NIHttpTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIHttpTool_Example.debug.xcconfig"; path = "Target Support Files/Pods-NIHttpTool_Example/Pods-NIHttpTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BEA86C9B763015292BC6F48A /* Pods-NIHttpTool_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIHttpTool_Tests.release.xcconfig"; path = "Target Support Files/Pods-NIHttpTool_Tests/Pods-NIHttpTool_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -306,11 +306,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NIHttpTool_Example/Pods-NIHttpTool_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/NIHttpTool/NIHttpTool.framework",
+				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIHttpTool.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -4,7 +4,8 @@ platform :ios, '8.0'
 
 target 'NIHttpTool_Example' do
   pod 'NIHttpTool', :path => '../'
-
+  pod 'MJExtension'
+  
   target 'NIHttpTool_Tests' do
     inherit! :search_paths
     
