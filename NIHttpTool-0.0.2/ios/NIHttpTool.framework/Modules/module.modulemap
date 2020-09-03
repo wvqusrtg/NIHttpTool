@@ -1,0 +1,6 @@
+framework module NIHttpTool {
+  umbrella header "NIHttpTool.h"
+
+  export *
+  module * { export * }
+}
